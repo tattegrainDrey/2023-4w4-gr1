@@ -7,6 +7,7 @@
 - Réaliser une première version d'un thème
 
 #### Liens de références
+- https://eddytuto.ca/
 - https://eddytuto.sg-host.com/installation-de-wordpress/
 
 #### Raccourci

@@ -1,12 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>4w4</title>
-</head>
-<body>
+<?php 
+/** index.php est le modele par défaut du thème
+*/ ?> 
+<?php get_header(); ?> 
+
+<main>
     <h1>Bienvenue au 4w4</h1>  
+</main>
+
+<?php get_footer(); ?> 
+
 </body>
 </html>
