@@ -2,7 +2,30 @@
     text-decoration: none;
 }
 
-.site__titre h1 {
+body {
+    background-color: #fef6e4;
+    color:#001858;
+    margin: 0 1rem;
+}
+
+h1 {
     font-size: clamp(1rem, 0.3864rem + 2.4545vw, 4.375rem);
-    color:darkcyan;
+
+}
+
+article {
+    background-color: #f3d2c1;
+}
+
+a {
+    text-decoration: none;
+    color: #001858;
+}
+
+h4 {
+    color: #172c66;
+}
+
+hr {
+    border-color: #8bd3dd;
 }
