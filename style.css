@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*
-Theme Name: 4W4 Tattegrain - Exercice 1
-Theme URI: https://github.com/tattegrainDrey/2023-4w4-gr1/tree/ex1
+Theme Name: 4W4 Tattegrain
+Theme URI: https://github.com/tattegrainDrey/4w4
 Author: D. A. A. Tattegrain
 Author URI: https://github.com/tattegrainDrey/
 Description: Thème réalisé dans le cours 4w4
@@ -377,6 +377,35 @@ p {
   text-decoration: none;
 }
 
+.site__entete {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.entete__gauche {
+  display: flex;
+  align-items: center;
+}
+
+.custom-logo {
+  max-width: 80%;
+  height: auto;
+  border-radius: 5%;
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+  column-gap: 1rem;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.menu *:hover, .site__titre h1:hover {
+  color: #f582ae;
+}
+
 body {
   background-color: #fef6e4;
   color: #001858;
@@ -402,4 +431,5 @@ h4 {
 
 hr {
   border-color: #8bd3dd;
+  border-style: dashed;
 }/*# sourceMappingURL=style.css.map */
