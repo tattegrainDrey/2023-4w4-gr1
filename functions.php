@@ -2,9 +2,6 @@
 /**
  * L'ensemble des fonctions du thème
  */
-?>
-
-<?php
 
 function enfiler_css(){
     wp_enqueue_style('4w4-principal', //identificateur
@@ -13,6 +10,21 @@ function enfiler_css(){
                      filemtime(get_template_directory() . '/style.css')); //calcul de la version de la feuille de style
 }
 
-add_action('wp_enqueue_scripts', 'enfiler_css')
+add_action('wp_enqueue_scripts', 'enfiler_css');
 
-?>
+/* -------------------------------------- Enregitrement des menus */
+function enregistre_menus(){
+    register_nav_menus( array(
+    'menu_entete' => 'Menu entete',
+    'menu_sidebar'  => 'Menu sidebar',
+    ) );
+}
+add_action( 'after_setup_theme', 'enregistre_menus', 0 );
+
+/* -------------------------------------- add_theme_suport */
+
+add_theme_support( 'title-tag' );
+add_theme_support( 'custom-logo', array(
+'height' => 150,
+'width'  => 150
+) );

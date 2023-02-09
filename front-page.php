@@ -1,5 +1,6 @@
 <?php 
-/** index.php est le modele par défaut du thème
+/** 
+ * index.php est le modele par défaut du thème
 */ ?> 
 <?php get_header(); ?> 
 
@@ -21,6 +22,5 @@
 </main>
 
 <?php get_footer(); ?> 
-
 </body>
 </html>
