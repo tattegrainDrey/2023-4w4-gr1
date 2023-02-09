@@ -3,6 +3,7 @@
 }
 
 .site__entete {
+    margin-top: 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -14,16 +15,29 @@
 }
 
 .custom-logo {
-    max-width: 80%;
+    max-width: 90%;
     height: auto;
     border-radius: 5%;
+}
+
+.titre__slogan {
+    display: flex;
+    flex-direction: column;
+}
+
+.titre__slogan * {
+    margin: 0;
+}
+
+.titre__slogan h2 {
+    font-size: 1.7em;
 }
 
 .menu {
     list-style-type: none;
     display: flex;
     column-gap: 1rem;
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-weight: bold;
 }
 
