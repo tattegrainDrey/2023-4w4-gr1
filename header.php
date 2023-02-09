@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>4w4</title>
     <a class="site__titre"href="<?= bloginfo('url') ?>"><h1><?= bloginfo('name') ?> </h1></a>    
     <h2><?= bloginfo('description') ?> </h2>
     <?php wp_head(); ?>
@@ -16,8 +15,5 @@
                     "menu" => "entete",
                     "container" => "nav",
                     "container_class" => "menu__entete"
-
                  )); ?>
-        <h1><a class="site__titre" href="<?= bloginfo('url'); ?>"><?= bloginfo('name'); ?></a></h1>
-        <h2><?= bloginfo('description'); ?></h2>
     </header>
