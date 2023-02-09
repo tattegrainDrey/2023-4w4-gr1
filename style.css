@@ -356,20 +356,23 @@ h1 {
 }
 
 h2 {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  /* font-family: "Slackey", cursive; */
+  font-family: "Lobster", cursive;
 }
 
 h3,
 h4,
 h5,
 h6 {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Lobster", cursive;
   margin: 0.5rem 0;
 }
 
 p {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family: "Shadows Into Light", cursive;
+}
+
+a {
+  font-family: "Lobster", cursive;
 }
 
 /* --------------------------------------------- composant */
@@ -405,14 +408,14 @@ p {
 }
 
 .titre__slogan h2 {
-  font-size: 1.7em;
+  font-size: 1.2em;
 }
 
 .menu {
   list-style-type: none;
   display: flex;
   column-gap: 1rem;
-  font-size: 1.3em;
+  font-size: 1.4em;
   font-weight: bold;
 }
 
@@ -432,6 +435,7 @@ h1 {
 
 article {
   background-color: #f3d2c1;
+  padding: 0.2em 1em;
 }
 
 a {
@@ -445,5 +449,6 @@ h4 {
 
 hr {
   border-color: #8bd3dd;
-  border-style: dashed;
+  border-style: double;
+  border-width: medium;
 }/*# sourceMappingURL=style.css.map */
