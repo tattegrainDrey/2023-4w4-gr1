@@ -376,6 +376,10 @@ a {
   font-family: "Lobster", cursive;
 }
 
+pre {
+  overflow-x: scroll;
+}
+
 /* --------------------------------------------- composant */
 .site__titre {
   text-decoration: none;
@@ -422,6 +426,17 @@ a {
 
 .menu *:hover, .site__titre h1:hover, .main-accueil h3:hover {
   color: #f582ae;
+}
+
+.blocflex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.blocflex article {
+  flex: 1 0 250px;
+  margin: 10px;
+  padding: 5px;
 }
 
 body {
