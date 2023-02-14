@@ -1,4 +1,4 @@
-# S4C1 - Implémentation de fichiers markdown dans Wordpress
+# Lab3 - Implémentation de fichiers markdown dans Wordpress
 ## 4w4 - Conception d'interfaces et développement Web
 ### Auteur: Tattegrain
 
