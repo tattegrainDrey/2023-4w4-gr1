@@ -1,4 +1,4 @@
-# S3C2 - Thème de base
+# S3C2 - Sass
 ## 4w4 - Conception d'interfaces et développement Web
 ### Auteure: Tattegrain
 
