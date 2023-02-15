@@ -3,17 +3,15 @@
 */ ?> 
 <?php get_header(); ?> 
 
-<main>
+<main class="main-article">
     <!-- <pre>single.php</pre> -->
-    <h1>Bienvenue au 4w4</h1>  
     <?php if(have_posts()):
         while(have_posts()): the_post(); ?> 
-            <article>
-                <h3><?php the_title() ?> </h3>
-                <h4><?php the_content() ?> </h4>
 
+            <article>
+                <h1><?php the_title() ?> </h1>
+                <?php the_content() ?>
             </article>
-            <hr>
 
         <?php endwhile ?> 
     <?php endif ?>

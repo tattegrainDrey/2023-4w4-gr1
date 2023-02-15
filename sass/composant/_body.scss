@@ -4,9 +4,8 @@ body {
     margin: 0 1rem;
 }
 
-h1 {
+.main-accueil h1 {
     font-size: clamp(1rem, 0.3864rem + 2.4545vw, 4.375rem);
-
 }
 
 article {
@@ -23,7 +22,7 @@ h4 {
     color: #172c66;
 }
 
-hr {
+.main-accueil hr {
     border-color: #8bd3dd;
     border-style: double;
     border-width: medium;

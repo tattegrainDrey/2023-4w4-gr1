@@ -1,21 +1,55 @@
-ul, ol {
+.main-article {
+    margin-top: 2rem;
 
-}
+    article{
+        padding: .5rem 3rem 3rem;
+    }
 
-ul li,
-ol li {
-     
-}
+    h1 {
+        font-size: 3rem;
+        text-align: center;
+        text-decoration: overline;
+    }
 
-li > ol,
-li > ul {
+    h2 {
+        margin-left: 1rem;
+    }
+
+    h3 {
+        font-size: clamp(1rem, 0.7801rem + 0.8541vw, 1.6rem);
+        margin-left: 1.2rem;
+    }
+
+    hr {
+        border: .4rem dotted #172c66;
+        margin-top: 4rem;
+    }
+
+    ul {
+        list-style-type: square;
+    }
+
+    li {
+        //créer le clamp
+        font-size: 1.5rem;
+        margin-bottom: .3rem;
+
+        ul {
+            margin-top: .5rem;
+
+            li {
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+    pre {
+        overflow-x: auto;
     
+    }
 }
 
-pre {
-    overflow-x: scroll;
 
-}
 
 code {
 
@@ -23,8 +57,4 @@ code {
 
 strong {
 
-}
-
-hr {
-    
 }

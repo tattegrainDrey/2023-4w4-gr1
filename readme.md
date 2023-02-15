@@ -18,6 +18,8 @@
 #### Aide
  - [Markdown CheatSheet](https://www.markdownguide.org/cheat-sheet)
  - [Github CheatSheet](https://education.github.com/git-cheat-sheet-education.pdf)
+ - [Font-size Clamp Generator](https://clamp.font-size.app/)
+ - [Flexbox Guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
  #### À faire
  - [ ] Réajuster le css de la page d'accueil
