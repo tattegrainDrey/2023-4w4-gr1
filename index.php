@@ -4,7 +4,7 @@
 <?php get_header(); ?> 
 
 <main>
-    <pre>index.php.php</pre>
+    <!-- <pre>index.php.php</pre> -->
     <h1>Bienvenue au 4w4</h1>  
     <?php
         if (have_posts()):

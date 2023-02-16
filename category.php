@@ -5,7 +5,7 @@
 <?php get_header(); ?>
 
 <main class="main-accueil">
-    <!-- <pre>front-page.php</pre> -->
+    <!-- <pre>category.php</pre> -->
     <section class="blocflex">
     <?php if(have_posts()):
         while(have_posts()): the_post(); ?> 
