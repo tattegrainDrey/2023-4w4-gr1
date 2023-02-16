@@ -1,27 +1,27 @@
 .main-article {
-    margin-top: 2rem;
+    margin: 2rem 0;
+    border: .8rem ridge #8bd3dd;
+    border-radius: 2rem;
 
     article{
-        padding: .5rem 3rem 3rem;
+        padding: .5rem 4rem 3rem;
+        border-radius: inherit;
     }
 
     h1 {
         font-size: 3rem;
+        padding: 1rem 0;
         text-align: center;
-        text-decoration: overline;
-    }
-
-    h2 {
-        margin-left: 1rem;
+        text-decoration: overline underline double #8bd3dd;
+        text-underline-offset: 1rem;
     }
 
     h3 {
         font-size: clamp(1rem, 0.7801rem + 0.8541vw, 1.6rem);
-        margin-left: 1.2rem;
     }
 
     hr {
-        border: .4rem dotted #172c66;
+        border: .4rem ridge #8bd3dd;
         margin-top: 4rem;
     }
 
@@ -33,12 +33,15 @@
         //créer le clamp
         font-size: 1.5rem;
         margin-bottom: .3rem;
+        color: #172c66;
 
         ul, ol {
             margin-top: .5rem;
 
             li {
                 font-size: 1.4rem;
+                list-style-type: circle;
+                list-style-position: inside;
             }
         }
     }
@@ -47,18 +50,22 @@
         overflow-x: auto;
         color: #fef6e4;
         background-color: #172c66;
-        padding: 1rem;
-        margin: 0 1.5rem;
-    
+        padding: 1.5rem 1rem;
+        margin: 0 1.5rem 2rem;
+        width: 81.5rem;
+        height: 25rem;
+        border-radius: .5rem;    
+    }
+
+    a:hover {
+        color: #f582ae;
+        cursor:help;
+    }
+
+    p {
+        font-size: 1.5rem;
+        margin: 0.5rem 0;
+        line-height: 1;
     }
 }
 
-
-
-code {
-
-}
-
-strong {
-
-}

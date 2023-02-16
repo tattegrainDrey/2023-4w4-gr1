@@ -380,25 +380,26 @@ a {
 }
 
 .main-article {
-  margin-top: 2rem;
+  margin: 2rem 0;
+  border: 0.8rem ridge #8bd3dd;
+  border-radius: 2rem;
 }
 .main-article article {
-  padding: 0.5rem 3rem 3rem;
+  padding: 0.5rem 4rem 3rem;
+  border-radius: inherit;
 }
 .main-article h1 {
   font-size: 3rem;
+  padding: 1rem 0;
   text-align: center;
-  text-decoration: overline;
-}
-.main-article h2 {
-  margin-left: 1rem;
+  text-decoration: overline underline double #8bd3dd;
+  text-underline-offset: 1rem;
 }
 .main-article h3 {
   font-size: clamp(1rem, 0.7801rem + 0.8541vw, 1.6rem);
-  margin-left: 1.2rem;
 }
 .main-article hr {
-  border: 0.4rem dotted #172c66;
+  border: 0.4rem ridge #8bd3dd;
   margin-top: 4rem;
 }
 .main-article ul {
@@ -407,19 +408,34 @@ a {
 .main-article li {
   font-size: 1.5rem;
   margin-bottom: 0.3rem;
+  color: #172c66;
 }
 .main-article li ul, .main-article li ol {
   margin-top: 0.5rem;
 }
 .main-article li ul li, .main-article li ol li {
   font-size: 1.4rem;
+  list-style-type: circle;
+  list-style-position: inside;
 }
 .main-article pre {
   overflow-x: auto;
   color: #fef6e4;
   background-color: #172c66;
-  padding: 1rem;
-  margin: 0 1.5rem;
+  padding: 1.5rem 1rem;
+  margin: 0 1.5rem 2rem;
+  width: 81.5rem;
+  height: 25rem;
+  border-radius: 0.5rem;
+}
+.main-article a:hover {
+  color: #f582ae;
+  cursor: help;
+}
+.main-article p {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+  line-height: 1;
 }
 
 /* --------------------------------------------- composant */
