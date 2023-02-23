@@ -6,19 +6,30 @@
 
 <main class="main-accueil">
     <!-- <pre>category.php</pre> -->
-    <section class="blocflex">
-    <?php if(have_posts()):
-        while(have_posts()): the_post(); ?> 
+   <section class="blocflex">
+   <?php
+      $category = get_queried_object();
+      $args = array(
+         'category_name' => $category->slug,
+         'orderby' => 'title',
+         'order' => 'ASC'
+      );
+    //   création d'une nouvelle requête
+      $query = new WP_Query( $args );
+    //   tout le reste de l'extraction de données est basée sur la nouvelle requête contenue dans $query
+      if ( $query->have_posts() ) :
+         while ( $query->have_posts() ) : $query->the_post(); ?>
             <article>
-            <h3><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h3>
-                <h4><?= wp_trim_words(get_the_excerpt(), 10 ) ?> </h4>
-
+               <h3><a href="<?php the_permalink(); ?>"> <?= get_the_title(); ?></a></h3>
+               <p><?= wp_trim_words(get_the_excerpt(), 15) ?></p>
             </article>
-        <?php endwhile ?> 
-    <?php endif ?>
-    </section>
-
+         <?php endwhile; ?>
+      <?php endif;
+      wp_reset_postdata();?>
+   </section>
 </main>
+
+
 
 <?php get_footer(); ?> 
 </body>

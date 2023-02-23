@@ -20,9 +20,15 @@
                     <h2><?= bloginfo('description') ?> </h2> 
                 </div>
             </div>
-            <?php  wp_nav_menu(array( 
-                    "menu" => "entete",
-                    "container" => "nav",
-                    "container_class" => "menu__entete"
-             )); ?>
+            <div class="entete__droite">
+                <?php  wp_nav_menu(array( 
+                        "menu" => "entete",
+                        "container" => "nav",
+                        "container_class" => "menu__entete"
+                 )); ?>
+                <?php
+                    get_search_form();
+                 ?>
+            </div>
     </header>
+    <hr>

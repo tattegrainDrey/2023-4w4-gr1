@@ -12,6 +12,11 @@ body {
         background-color: #f3d2c1;
         padding: .2em 1em;
     }
+
+    hr {
+        margin: 2rem 0;
+        color: #172c66;
+    }
 }
 
 .main-accueil {
@@ -21,17 +26,18 @@ body {
         align-items: center;
     }
     article {
-        border: .8rem ridge #8bd3dd;
-        border-radius: 2rem;
+        border: .4rem ridge #8bd3dd;
+        border-radius: .6rem;
+        box-shadow: .2em .2em 6px #172c66, .2em .2em 8px #f582ae;
     }
 
     h3 {
-        font-size: 1.5rem;
+        font-size: clamp(1.1rem, 0.7864rem + 0.7433vw, 1.5rem);
     }
     
     h4 {
         color: #172c66;
-        font-size: .96rem;
+        font-size: clamp(0.9rem, 0.853rem + 0.1115vw, 0.96rem);
     }
     
     .main-accueil hr {
