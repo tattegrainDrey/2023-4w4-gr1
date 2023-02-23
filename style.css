@@ -324,11 +324,11 @@ template {
 
 /* --------------------------------------------- base */
 h1 {
-  font-size: clamp(0.75rem, -0.75rem + 4.8vw, 3.75rem);
+  font-size: clamp(1.5rem, -0.2639rem + 4.1812vw, 3.75rem);
 }
 
 h2 {
-  font-size: clamp(0.625rem, -0.3125rem + 3vw, 2.5rem);
+  font-size: clamp(0.5rem, 0.2434rem + 0.9964vw, 1.2rem);
 }
 
 h3 {
@@ -349,6 +349,10 @@ h6 {
 
 P {
   font-size: clamp(0.5rem, 0.125rem + 1.2vw, 1.1rem);
+}
+
+a {
+  font-size: clamp(0.8rem, 0.2512rem + 1.3008vw, 1.5rem);
 }
 
 ul {
@@ -443,18 +447,25 @@ a {
 /* --------------------------------------------- composant */
 .site__entete {
   margin-top: 1rem;
-  display: flex;
+  display: grid;
   align-items: center;
-  justify-content: space-between;
+  grid-template-areas: "gauche . . . droite" "gauche . . . milieu";
 }
 .site__entete .entete__gauche {
+  grid-area: gauche;
   display: flex;
+  flex: 1 1 20rem;
   align-items: center;
 }
 .site__entete .entete__gauche .custom-logo {
   max-width: 90%;
   height: auto;
   border-radius: 5%;
+}
+@media screen and (max-width: 1300px) {
+  .site__entete .entete__gauche .image {
+    width: 110px;
+  }
 }
 .site__entete .entete__gauche .titre__slogan {
   display: flex;
@@ -463,20 +474,19 @@ a {
 .site__entete .entete__gauche .titre__slogan .site__titre {
   text-decoration: none;
 }
-.site__entete .entete__gauche .titre__slogan h2 {
-  font-size: clamp(0.5rem, 0.2434rem + 0.9964vw, 1.2rem);
-}
 .site__entete .entete__gauche .titre__slogan * {
   margin: 0;
 }
 .site__entete .entete__droite {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  grid-area: droite;
+  justify-self: flex-end;
+  align-self: center;
 }
 .site__entete .entete__droite .menu {
   list-style-type: none;
   display: flex;
+  flex-wrap: nowrap;
+  white-space: nowrap;
   justify-content: flex-end;
   column-gap: 1rem;
   font-size: clamp(0.7rem, 0.4434rem + 0.9964vw, 1.4rem);
@@ -492,33 +502,41 @@ a {
 .site__entete .entete__droite .menu *:hover, .site__entete .entete__droite .site__titre h1:hover, .site__entete .entete__droite .main-accueil h3:hover {
   color: #f582ae;
 }
-.site__entete .entete__droite form {
+.site__entete form {
+  grid-area: milieu;
+  justify-self: flex-end;
   display: flex;
-  justify-content: flex-end;
 }
-.site__entete .entete__droite form input {
+.site__entete form input {
   border: solid #001858 thick;
   height: 2.5rem;
   border-right: none;
 }
-.site__entete .entete__droite form input:focus {
+.site__entete form input:focus {
   border: none;
 }
-.site__entete .entete__droite form button {
+.site__entete form button {
+  height: 2.5rem;
   border: solid #001858 thick;
   border-left: none;
   background-color: #8bd3dd;
 }
-.site__entete .entete__droite form button span {
+.site__entete form button span {
   display: flex;
   justify-content: center;
 }
-.site__entete .entete__droite form button:hover {
+.site__entete form button:hover {
   cursor: pointer;
   background-color: #f582ae;
   opacity: 0.7;
 }
 
+@media screen and (max-width: 870px) {
+  .site__entete {
+    margin-top: 1rem;
+    display: grid;
+  }
+}
 .blocflex {
   display: flex;
   justify-content: space-between;

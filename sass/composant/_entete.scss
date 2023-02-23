@@ -1,17 +1,28 @@
 .site__entete {
     margin-top: 1rem;
-    display: flex;
+    display: grid;
     align-items: center;
-    justify-content: space-between;
+    grid-template-areas: "gauche . . . droite"
+                         "gauche . . . milieu";
+
 
     .entete__gauche {
-        display: flex;
+        grid-area: gauche;
+        display: flex;        
+        flex: 1 1 20rem;
         align-items: center;
 
         .custom-logo {
             max-width: 90%;
             height: auto;
             border-radius: 5%;
+        }
+        @media screen and (max-width: 1300px) {
+            .image {
+                width: 110px;
+            }
+            
+            
         }
 
         .titre__slogan {
@@ -21,10 +32,6 @@
             .site__titre{
                 text-decoration: none;
             }
-
-            h2 {
-                font-size: clamp(0.5rem, 0.2434rem + 0.9964vw, 1.2rem);
-            }
         }
 
         .titre__slogan * {
@@ -33,13 +40,14 @@
     }
 
     .entete__droite {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-
+        grid-area: droite;
+        justify-self: flex-end;
+        align-self:center;
         .menu {
             list-style-type: none;
             display: flex;
+            flex-wrap: nowrap;
+            white-space: nowrap;
             justify-content: flex-end;
             column-gap: 1rem;
             font-size: clamp(0.7rem, 0.4434rem + 0.9964vw, 1.4rem);
@@ -58,39 +66,50 @@
         .menu *:hover, .site__titre h1:hover, .main-accueil h3:hover {
             color: #f582ae;
         }
+    }  
 
-        form {
-            display: flex;
-            justify-content: flex-end;
-
-            //dynamiser la taille (height) de la barre de recherche
-            input {
-                border: solid #001858 thick;
-                height: 2.5rem;
-                border-right: none;          
-            }
-
-            input:focus {
-                border: none;
-            }
-
-            button {
-                border: solid #001858 thick;
-                border-left: none;
-                background-color: #8bd3dd;
-
-                span {
-                    display: flex;
-                    justify-content: center;
-                }
-            } 
-
-            button:hover {
-                cursor: pointer;
-                background-color: #f582ae;
-                opacity: .7;
-            }
+    form {
+        grid-area: milieu;
+        justify-self: flex-end;
+        display: flex;
+        //dynamiser la taille (height) de la barre de recherche
+        input {
+            border: solid #001858 thick;
+            height: 2.5rem;
+            border-right: none;          
         }
+        input:focus {
+            border: none;
+        }
+        button {
+            height: 2.5rem;
+            border: solid #001858 thick;
+            border-left: none;
+            background-color: #8bd3dd;
+            span {
+                display: flex;
+                justify-content: center;
+            }
+        } 
+        button:hover {
+            cursor: pointer;
+            background-color: #f582ae;
+            opacity: .7;
+        }
+    }
+}
 
-    }    
+@media screen and (max-width: 870px) {
+    //change max-width
+
+    //have logo and research in their own row
+    //have menu in its own row
+    .site__entete {
+        margin-top: 1rem;
+        display: grid;
+        align-items: center;
+        grid-template-areas: "gauche . . . droite"
+                             "gauche . . . milieu";
+    }
+    
 }

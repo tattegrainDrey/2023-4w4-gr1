@@ -30,9 +30,9 @@
                         "container" => "nav",
                         "container_class" => "menu__entete"
                  )); ?>
-                <?php
-                    get_search_form();
-                 ?>
             </div>
+            <?php
+                get_search_form();
+             ?>
     </header>
     <hr>

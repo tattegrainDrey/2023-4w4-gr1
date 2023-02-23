@@ -1,9 +1,8 @@
-h1 {
-    font-size: clamp(0.75rem, -0.75rem + 4.8vw, 3.75rem);
+  h1 {
+    font-size: clamp(1.5rem, -0.2639rem + 4.1812vw, 3.75rem);
   }
-
   h2 {
-    font-size: clamp(0.625rem, -0.3125rem + 3vw, 2.5rem);
+    font-size: clamp(0.5rem, 0.2434rem + 0.9964vw, 1.2rem);
   }
   h3 {
     font-size: clamp(0.5625rem, -0.25rem + 2.6vw, 2.1875rem);
@@ -17,11 +16,13 @@ h1 {
   h6 {
     font-size: clamp(0.5rem, 0.125rem + 1.2vw, 1.25rem);
   }
-  
+
   P {
     font-size: clamp(0.5rem, 0.125rem + 1.2vw, 1.1rem);
   }
-
+  a {
+    font-size: clamp(0.8rem, 0.2512rem + 1.3008vw, 1.5rem);
+  }
   ul {
     font-family: 'Garamond', serif;
   }
