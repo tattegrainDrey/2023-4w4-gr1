@@ -580,6 +580,14 @@ body hr {
   animation-duration: 1s;
 }
 
+.contenuFoot {
+  font-family: "Courier New", Courier, monospace;
+}
+.contenuFoot a {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bolder;
+}
+
 footer a:hover {
   color: #f582ae;
 }
