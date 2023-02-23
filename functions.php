@@ -51,7 +51,7 @@ function cidweb_modifie_requete_principal( $query ) {
 
 
     /** 
-     * Modifie la variable du titre de wordpress
+     * Modifie la variable du titre de wordpress (le tronquant)
      * dépendant de sa longueur ($max)
      * et de sa position (!is_single())
     */
