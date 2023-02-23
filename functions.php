@@ -50,10 +50,14 @@ function cidweb_modifie_requete_principal( $query ) {
 
 
 
-    //  ewfwe
+    /** 
+     * Modifie la variable du titre de wordpress
+     * dépendant de sa longueur ($max)
+     * et de sa position (!is_single())
+    */
     function max_title_length( $title ) {
         $max = 25;
-        if( strlen( $title ) > $max ) {
+        if( strlen( $title ) > $max && !is_single()) {
         return substr( $title, 0, $max ). " &hellip;";
         } else {
         return $title;

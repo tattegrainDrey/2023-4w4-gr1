@@ -4,7 +4,7 @@
 */ ?> 
 <?php get_header(); ?>
 
-<main class="main-accueil">
+<main class="main-accueil category">
     <!-- <pre>category.php</pre> -->
    <section class="blocflex">
    <?php
@@ -20,7 +20,7 @@
       if ( $query->have_posts() ) :
          while ( $query->have_posts() ) : $query->the_post(); ?>
             <article>
-               <h3><a href="<?php the_permalink(); ?>"> <?= get_the_title(); ?></a></h3>
+               <h3 class="animate__animated animate__jello"><a href="<?php the_permalink(); ?>"> <?= get_the_title(); ?></a></h3>
                <p><?= wp_trim_words(get_the_excerpt(), 15) ?></p>
             </article>
          <?php endwhile; ?>
