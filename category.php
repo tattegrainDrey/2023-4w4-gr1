@@ -18,9 +18,17 @@
       $query = new WP_Query( $args );
     //   tout le reste de l'extraction de données est basée sur la nouvelle requête contenue dans $query
       if ( $query->have_posts() ) :
-         while ( $query->have_posts() ) : $query->the_post(); ?>
+         while ( $query->have_posts() ) : $query->the_post();
+         $titre = get_the_title();
+         if ($category->slug == "cours"){
+            $sigle = substr($titre, 0, 7);
+            $nom = substr($titre, 7, -6);
+            $duree = "46h";
+         }
+         
+         ?>
             <article>
-               <h3 class="animate__animated animate__jello"><a href="<?php the_permalink(); ?>"> <?= get_the_title(); ?></a></h3>
+               <h3 class="animate__animated animate__jello"><a href="<?php the_permalink(); ?>"> <?= $nom ?></a></h3>
                <p><?= wp_trim_words(get_the_excerpt(), 15) ?></p>
             </article>
          <?php endwhile; ?>
