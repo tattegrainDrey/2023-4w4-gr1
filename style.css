@@ -344,11 +344,11 @@ h5 {
 }
 
 h6 {
-  font-size: clamp(0.5rem, 0.125rem + 1.2vw, 1.25rem);
+  font-size: clamp(0.8rem, 0.2512rem + 1.3008vw, 1.5rem);
 }
 
 P {
-  font-size: clamp(0.5rem, 0.125rem + 1.2vw, 1.1rem);
+  font-size: clamp(1rem, 0.804rem + 0.4646vw, 1.25rem);
 }
 
 a {
@@ -597,9 +597,6 @@ body .e404 * {
 .main-accueil h4 {
   color: #172c66;
   font-size: clamp(0.9rem, 0.853rem + 0.1115vw, 0.96rem);
-}
-.main-accueil p {
-  font-size: clamp(1.2rem, 1.1216rem + 0.1858vw, 1.3rem);
 }
 .main-accueil .main-accueil hr {
   border-color: #8bd3dd;

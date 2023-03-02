@@ -61,7 +61,7 @@
 
 ## À faire (IMPT)
   - [x] editer category pour ressembler scrum
-  - [ ] adapter category
+  - [x] adapter category
   - [ ] editer footer 
   - [ ] adapter footer
   - [ ] editer front-page (pour ne pas être comme category)
