@@ -29,7 +29,7 @@
          ?>
             <article>
                <h3 class="animate__animated animate__jello"><a href="<?php the_permalink(); ?>"> <?= $nom ?></a></h3>
-               <p><?= wp_trim_words(get_the_excerpt(), 15) ?></p>
+               <p><?= wp_trim_words(get_the_excerpt(), 13) ?></p>
             </article>
          <?php endwhile; ?>
       <?php endif;

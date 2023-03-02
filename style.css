@@ -535,6 +535,8 @@ a {
   .site__entete {
     margin-top: 1rem;
     display: grid;
+    align-items: center;
+    grid-template-areas: "gauche . . . droite" "gauche . . . milieu";
   }
 }
 .blocflex {
@@ -567,6 +569,10 @@ body article {
 body hr {
   margin: 2rem 0;
   color: #172c66;
+}
+body .e404 {
+  display: flex;
+  justify-content: center;
 }
 
 .main-accueil a {
@@ -614,4 +620,6 @@ footer .contenuFoot {
   display: flex;
   flex-direction: column;
   align-items: center;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/* --------------------------------------------- layout *//*# sourceMappingURL=style.css.map */

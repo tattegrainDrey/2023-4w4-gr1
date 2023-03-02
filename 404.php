@@ -3,9 +3,9 @@
 */ ?> 
 <?php get_header(); ?> 
 
-<main>
+<main class="e404">
     <!-- <pre>404.php</pre> -->
-    <h1>404</h1>  
+    <h1>erreur 404: page non trouvée</h1>  
     
 </main>
 
