@@ -63,6 +63,7 @@
   - [x] editer category pour ressembler scrum
   - [x] adapter category
   - [ ] editer footer 
+  - [ ] finir le footer après le cours pour celui-ci
   - [ ] adapter footer
   - [ ] editer front-page (pour ne pas être comme category)
   - [ ] adapter front-page
