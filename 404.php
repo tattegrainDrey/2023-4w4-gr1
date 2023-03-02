@@ -5,7 +5,8 @@
 
 <main class="e404">
     <!-- <pre>404.php</pre> -->
-    <h1>erreur 404: page non trouvée</h1>  
+    <h1>Page introuvable</h1>
+    <p>Désolé, la page que vous avez demandée est introuvable.</p>
     
 </main>
 

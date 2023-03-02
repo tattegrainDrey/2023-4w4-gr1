@@ -572,7 +572,11 @@ body hr {
 }
 body .e404 {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+body .e404 * {
+  size: 4rem;
 }
 
 .main-accueil a {
@@ -596,10 +600,10 @@ body .e404 {
   border-width: medium;
 }
 
-.category article h3 {
+.category article h5 {
   animation: none;
 }
-.category article:hover h3 {
+.category article:hover h5 {
   animation: jello;
   animation-duration: 1s;
 }

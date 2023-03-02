@@ -23,7 +23,12 @@ body {
 
     .e404 {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        * {
+            size: 4rem;
+        }
     }
 }
 
@@ -55,11 +60,11 @@ body {
 }
 
 .category {
-    article h3 { 
+    article h5 { 
         animation: none;
     }
 
-    article:hover h3 {
+    article:hover h5 {
         animation: jello;
         animation-duration: 1s;
     }

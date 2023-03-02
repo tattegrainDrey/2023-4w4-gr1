@@ -19,18 +19,10 @@
     //   tout le reste de l'extraction de données est basée sur la nouvelle requête contenue dans $query
       if ( $query->have_posts() ) :
          while ( $query->have_posts() ) : $query->the_post();
-         $titre = get_the_title();
-         if ($category->slug == "cours"){
-            $sigle = substr($titre, 0, 7);
-            $nom = substr($titre, 7, -6);
-            $duree = "46h";
-         }
-         
+            get_template_part("template-parts/categorie", $category->slug);
+
+
          ?>
-            <article>
-               <h3 class="animate__animated animate__jello"><a href="<?php the_permalink(); ?>"> <?= $nom ?></a></h3>
-               <p><?= wp_trim_words(get_the_excerpt(), 13) ?></p>
-            </article>
          <?php endwhile; ?>
       <?php endif;
       wp_reset_postdata();?>
