@@ -545,9 +545,16 @@ a {
   flex-wrap: wrap;
 }
 .blocflex article {
-  flex: 1 1 20rem;
+  flex: 6 2 50rem;
   margin: 10px;
   height: 11rem;
+}
+@media only screen and (min-width: 915px) {
+  .blocflex article {
+    flex: 6 0 50rem;
+    margin: 10px;
+    height: 11rem;
+  }
 }
 
 body {
@@ -606,6 +613,15 @@ body .e404 * {
 .category article:hover h5 {
   animation: jello;
   animation-duration: 1s;
+}
+.category * {
+  margin: 0.5rem 0;
+}
+.category h6:last-of-type {
+  margin: 2rem 0 0;
+}
+.category .cat4w4 {
+  margin: 2rem 0 0;
 }
 
 .contenuFoot {

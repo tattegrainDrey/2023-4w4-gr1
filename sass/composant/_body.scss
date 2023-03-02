@@ -68,6 +68,18 @@ body {
         animation: jello;
         animation-duration: 1s;
     }
+    
+    * {
+        margin: .5rem 0;
+    }
+
+    h6:last-of-type {
+        margin: 2rem 0 0;
+    }
+
+    .cat4w4 {
+        margin: 2rem 0 0;
+    }
 }
 
 .contenuFoot {
