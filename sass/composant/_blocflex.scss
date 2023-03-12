@@ -1,19 +1,19 @@
 .blocflex {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    flex-direction: column;
 
-    article {
-        flex: 6 2 50rem;
-        margin: 10px;
-        height: 11rem;
+    .blocflex__galerie {
+        align-self: center;
+        order: 1;
+        background: none;
+        border: none;
+        box-shadow: 1px 1px 5px #f3d2c1 inset;
     }
 
-    @media only screen and (min-width: 915px) {
-        article {
-            flex: 6 0 50rem;
-            margin: 10px;
-            height: 11rem;
-        }
+    .blocflex__article {
+        order: 2;
     }
+
 }

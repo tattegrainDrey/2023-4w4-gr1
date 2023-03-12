@@ -9,12 +9,14 @@
     <section class="blocflex">
     <?php if(have_posts()):
         while(have_posts()): the_post(); ?> 
-            <article>
-                <a href="<?php the_permalink() ?>">
-                <h3><?php the_title() ?></h3>
-                <h4><?= wp_trim_words(get_the_excerpt(), 10 ) ?> </h4>
-                </a>
-            </article>
+        <?php 
+        if (in_category("galerie")) {
+            get_template_part("template-parts/categorie", "galerie");
+        }
+        else {
+            get_template_part("template-parts/categorie", "4w4");
+        }
+        ?>
         <?php endwhile ?> 
     <?php endif ?>
     </section>

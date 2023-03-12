@@ -65,7 +65,7 @@
   - [ ] editer footer 
   - [ ] finir le footer après le cours pour celui-ci
   - [ ] adapter footer
-  - [ ] editer front-page (pour ne pas être comme category)
+  - [x] editer front-page (pour ne pas être comme category)
   - [ ] adapter front-page
   - [ ] editer // adapter header - menu primaire
   - [ ] editer // adapter header - menu secondaire

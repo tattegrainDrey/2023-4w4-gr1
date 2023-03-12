@@ -10,6 +10,7 @@ body {
 
     article {
         background-color: #f3d2c1;
+        margin-bottom: 2rem;
         padding: .2em 1em;
         border: .4rem ridge #8bd3dd;
         border-radius: .6rem;
@@ -56,6 +57,10 @@ body {
 }
 
 .category {
+    article {
+        padding: 1rem 1rem;
+    }
+
     article h5 { 
         animation: none;
     }

@@ -542,19 +542,18 @@ a {
 .blocflex {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  flex-direction: column;
 }
-.blocflex article {
-  flex: 6 2 50rem;
-  margin: 10px;
-  height: 11rem;
+.blocflex .blocflex__galerie {
+  align-self: center;
+  order: 1;
+  background: none;
+  border: none;
+  box-shadow: 1px 1px 5px #f3d2c1 inset;
 }
-@media only screen and (min-width: 915px) {
-  .blocflex article {
-    flex: 6 0 50rem;
-    margin: 10px;
-    height: 11rem;
-  }
+.blocflex .blocflex__article {
+  order: 2;
 }
 
 body {
@@ -568,6 +567,7 @@ body a {
 }
 body article {
   background-color: #f3d2c1;
+  margin-bottom: 2rem;
   padding: 0.2em 1em;
   border: 0.4rem ridge #8bd3dd;
   border-radius: 0.6rem;
@@ -604,6 +604,9 @@ body .e404 * {
   border-width: medium;
 }
 
+.category article {
+  padding: 1rem 1rem;
+}
 .category article h5 {
   animation: none;
 }
