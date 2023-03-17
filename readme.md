@@ -66,11 +66,11 @@
   - [ ] finir le footer après le cours pour celui-ci
   - [ ] adapter footer
   - [x] editer front-page (pour ne pas être comme category)
-  - [ ] adapter front-page
-  - [ ] editer // adapter header - menu primaire
-  - [ ] editer // adapter header - menu secondaire
-  - [ ] editer searchform
-  - [ ] adapter searchform
+  - [x] adapter front-page
+  - [x] editer // adapter header - menu primaire
+  - [x] editer // adapter header - menu secondaire
+  - [x] editer searchform
+  - [x] adapter searchform
   - [ ] editer single (retirer le doublon de border et bg-color)
   - [ ] adapter single
   - [ ] s'assurer que l'adaptivité mobile ait du sens (en regardant sur mon cell la version publiée)

@@ -1,6 +1,6 @@
 body {
     background-color: #fef6e4;
-    color:#001858;
+    color: #001858;
     margin: 0 1rem;
 
     a {
@@ -43,12 +43,12 @@ body {
     h3 {
         font-size: clamp(1.1rem, 0.7864rem + 0.7433vw, 1.5rem);
     }
-    
+
     h4 {
         color: #172c66;
         font-size: clamp(0.9rem, 0.853rem + 0.1115vw, 0.96rem);
     }
-    
+
     .main-accueil hr {
         border-color: #8bd3dd;
         border-style: double;
@@ -70,7 +70,7 @@ body {
         padding: 1rem 1rem;
     }
 
-    article h5 { 
+    article h5 {
         animation: none;
     }
 
@@ -78,7 +78,7 @@ body {
         animation: jello;
         animation-duration: 1s;
     }
-    
+
     * {
         margin: .5rem 0;
     }
@@ -105,16 +105,31 @@ body {
     }
 }
 
-@media screen and (max-width: 768px) {
-    .menu-sec {
-        display: none;
-    }
-}
-
 .contenuFoot {
     font-family: 'Courier New', Courier, monospace;
+
     a {
         font-family: 'Courier New', Courier, monospace;
         font-weight: bolder;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    body {
+
+        hr {
+            margin: .2rem 0;
+        }
+    }
+    .category-cont {
+        column-gap: 0rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .blocflex__galerie,
+    .menu-sec {
+        display: none;
     }
 }

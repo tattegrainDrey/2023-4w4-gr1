@@ -22,5 +22,6 @@ get_header();
    <?php endif; ?>
 </section>
 </main>
+</div>
 <?php
 get_footer();
