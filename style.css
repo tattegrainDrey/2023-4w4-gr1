@@ -328,7 +328,7 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(0.5rem, 0.2434rem + 0.9964vw, 1.2rem);
+  font-size: clamp(1rem, 0.2434rem + 0.9964vw, 1.2rem);
 }
 
 h3 {
@@ -384,16 +384,15 @@ a {
 }
 
 .main-article {
-  margin: 2rem 0;
-  border: 0.8rem ridge #8bd3dd;
-  border-radius: 2rem;
+  display: flex;
 }
 .main-article article {
   padding: 0.5rem 4rem 3rem;
   border-radius: inherit;
+  flex-grow: 2;
 }
 .main-article h1 {
-  font-size: 3rem;
+  font-size: clamp(1.1rem, 0.3732rem + 2.7363vw, 3rem);
   padding: 1rem 0;
   text-align: center;
   text-decoration: overline underline double #8bd3dd;
@@ -410,7 +409,7 @@ a {
   list-style-type: square;
 }
 .main-article li {
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-bottom: 0.3rem;
   color: #172c66;
 }
@@ -428,7 +427,7 @@ a {
   background-color: #172c66;
   padding: 1.5rem 1rem;
   margin: 0 1.5rem 2rem;
-  width: 81.5rem;
+  width: 50rem;
   height: 25rem;
   border-radius: 0.5rem;
 }
@@ -437,13 +436,33 @@ a {
   cursor: help;
 }
 .main-article p {
-  font-size: 1.5rem;
+  font-size: clamp(0.9rem, 0.8087rem + 0.7201vw, 1.5rem);
   font-weight: 600;
   margin: 0.5rem 0;
   letter-spacing: 0.1rem;
   line-height: 1;
 }
 
+@media screen and (max-width: 580px) {
+  .main-article h1 {
+    text-decoration: none;
+  }
+  .main-article pre {
+    width: 20rem;
+    height: 10rem;
+    margin: 0 0.5rem;
+  }
+  .main-article pre code {
+    font-size: 0.5rem;
+  }
+  .main-article article {
+    padding: 0.5rem 1rem 3rem;
+    box-shadow: none;
+  }
+  .main-article ul {
+    padding-left: 1rem;
+  }
+}
 /* --------------------------------------------- composant */
 .site__entete {
   margin-top: 1rem;
@@ -622,7 +641,7 @@ body .e404 * {
   display: grid;
   column-gap: 1rem;
   grid-template-areas: "mn mn sd";
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .category {
@@ -667,12 +686,13 @@ body .e404 * {
   font-weight: bolder;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 580px) {
   body hr {
     margin: 0.2rem 0;
   }
   .category-cont {
     column-gap: 0rem;
+    justify-content: center;
   }
 }
 @media screen and (max-width: 768px) {

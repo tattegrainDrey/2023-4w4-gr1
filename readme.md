@@ -11,11 +11,11 @@
 - Un pied de page
 - ~~Un design de thème amélioré avec Sass et PHP~~
 - Amélioration de l'affichage produit par les modèles:
-  - front-page.php
+  - ~~front-page.php~~
   - single.php
-  - category.php
-  - search.php
-  - header.php
+  - ~~category.php~~
+  - ~~search.php~~
+  - ~~header.php~~
   - footer.php
 - Une mise en page entièrement adaptative
 - S'inspirer des sites:
@@ -47,13 +47,13 @@
 
 1. Organisation des commits sur Github minimum 20 commits pour le thème **_(5 points)_**
 
-   - Minimum de 20 commits étalés sur toute la durée du TP
-   - Messages clairs, spécifiques, préfixé et non redondant
-   - Une branche **tp1**
+   - ~~Minimum de 20 commits étalés sur toute la durée du TP~~
+   - ~~Messages clairs, spécifiques, préfixé et non redondant~~
+   - ~~Une branche **tp1**~~
    - Déploiement de votre site sur Siteground
    - Un readme.md pour le thème et pour l'extension: auteur, titre du projet, description et lien vers votre site Site siteground
 
-2. Organisation de l'entête, footer et partie principale. Qualité du design et de l’intégration des différents éléments de contenu. Notamment, les articles de notes de cours s'affichent de façon optimale. Les modèles: header.php, footer.php, category.php, front-page.php et single.php sont bien structurés et affichent l'information prévue. **_(10 points)_**
+2. Organisation de l'entête, footer et partie principale. Qualité du design et de l’intégration des différents éléments de contenu. Notamment, les articles de notes de cours s'affichent de façon optimale. Les modèles: ~~header.php,~~ footer.php, ~~category.php, front-page.php et~~ single.php sont bien structurés et affichent l'information prévue. **_(10 points)_**
 3. Design général de la page et organisation de la programmation Sass, PHP. Organisation des menus, bouton burger pour afficher le menu principal pour les petits écrans. Adaptabilité générale du site. **_(5 points)_**
 
 
@@ -71,9 +71,10 @@
   - [x] editer // adapter header - menu secondaire
   - [x] editer searchform
   - [x] adapter searchform
-  - [ ] editer single (retirer le doublon de border et bg-color)
-  - [ ] adapter single
+  - [x] editer single (retirer le doublon de border et bg-color)
+  - [x] adapter single
   - [ ] s'assurer que l'adaptivité mobile ait du sens (en regardant sur mon cell la version publiée)
+    - (pas fait: menu burger pour cells)
 
 ## Si temps :
   - [ ] menu sec. OnClick (comme scrum)

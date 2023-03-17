@@ -17,6 +17,7 @@
     <?php endif ?>
 
 </main>
+</div>
 
 <?php get_footer(); ?> 
 
