@@ -4,7 +4,7 @@
 */ ?> 
 <?php get_header(); ?>
 
-<main class="main-accueil category">
+<main class="category">
     <!-- <pre>category.php</pre> -->
    <section class="blocflex">
    <?php
@@ -18,16 +18,22 @@
       $query = new WP_Query( $args );
     //   tout le reste de l'extraction de données est basée sur la nouvelle requête contenue dans $query
       if ( $query->have_posts() ) :
-         while ( $query->have_posts() ) : $query->the_post();
-            get_template_part("template-parts/categorie", $category->slug);
+      while(have_posts()): the_post(); ?> 
+      <?php 
+      if (in_category("galerie")) {
+         get_template_part("template-parts/categorie", "galerie");
+        }
 
-
-         ?>
-         <?php endwhile; ?>
+      else {
+         get_template_part("template-parts/categorie", "4w4");
+      }
+      
+      endwhile; ?>
       <?php endif;
       wp_reset_postdata();?>
    </section>
 </main>
+</div>
 
 
 

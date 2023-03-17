@@ -1,5 +1,6 @@
 <footer>
     <hr>
+    <div><?php ?> </div>
     <div class="contenuFootMain">
         Propriété de Djenah A. Tattegrain.
         <a href="https://github.com/tattegrainDrey">Github</a>

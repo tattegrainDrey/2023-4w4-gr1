@@ -56,7 +56,16 @@ body {
     }
 }
 
+.category-cont {
+    display: grid;
+    column-gap: 1rem;
+    grid-template-areas: 'mn mn sd';
+    justify-content: space-around;
+}
+
 .category {
+    grid-area: mn;
+
     article {
         padding: 1rem 1rem;
     }
@@ -80,6 +89,25 @@ body {
 
     .cat4w4 {
         margin: 2rem 0 0;
+    }
+}
+
+.menu-sec {
+    grid-area: sd;
+
+    li {
+        list-style-type: none;
+        margin: 1rem 0;
+    }
+
+    a:hover {
+        color: #8bd3dd;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu-sec {
+        display: none;
     }
 }
 
