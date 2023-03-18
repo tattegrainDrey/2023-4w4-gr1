@@ -62,9 +62,9 @@
 ## À faire (IMPT)
   - [x] editer category pour ressembler scrum
   - [x] adapter category
-  - [ ] editer footer 
+  - [x] editer footer 
   - [ ] finir le footer après le cours pour celui-ci
-  - [ ] adapter footer
+  - [x] adapter footer
   - [x] editer front-page (pour ne pas être comme category)
   - [x] adapter front-page
   - [x] editer // adapter header - menu primaire
@@ -73,7 +73,7 @@
   - [x] adapter searchform
   - [x] editer single (retirer le doublon de border et bg-color)
   - [x] adapter single
-  - [ ] s'assurer que l'adaptivité mobile ait du sens (en regardant sur mon cell la version publiée)
+  - [x] s'assurer que l'adaptivité mobile ait du sens (en regardant sur mon cell la version publiée)
     - (pas fait: menu burger pour cells)
 
 ## Si temps :
