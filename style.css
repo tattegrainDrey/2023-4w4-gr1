@@ -611,10 +611,18 @@ body .e404 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("https://images.pexels.com/photos/165505/pexels-photo-165505.jpeg?auto=compress&cs=tinysrgb");
+  background-size: cover;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  padding: 2rem;
+}
+body .e404 h1, body .e404 div {
+  opacity: 1;
 }
 body .e404 h2 {
   margin: 2rem 0 1rem;
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 0.8087rem + 0.7201vw, 1.5rem);
 }
 body .e404 .search404, body .e404 .notesmenu404, body .e404 .coursmenu404 {
   display: flex;
@@ -662,10 +670,10 @@ body .e404 .notesmenu404 ul, body .e404 .coursmenu404 ul {
   justify-content: space-around;
   row-gap: 1rem;
   column-gap: 1rem;
-  margin: 0;
+  margin: 0 0 3rem;
 }
 body .e404 .notesmenu404 a, body .e404 .coursmenu404 a {
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 0.9235rem + 0.288vw, 1.2rem);
 }
 body .e404 .notesmenu404 a:hover, body .e404 .coursmenu404 a:hover {
   color: #8bd3dd;
@@ -747,6 +755,22 @@ body .e404 .notesmenu404 a:hover, body .e404 .coursmenu404 a:hover {
 @media screen and (max-width: 580px) {
   body hr {
     margin: 0.2rem 0;
+  }
+  body .e404 {
+    padding: 0.5rem;
+    background-position: center bottom;
+  }
+  body .e404 form button {
+    height: 3rem;
+    width: v3rem;
+  }
+  body .e404 form input {
+    height: 3rem;
+    width: 15rem;
+  }
+  body .e404 .emoji {
+    width: 16px !important;
+    height: 16px !important;
   }
   .category-cont {
     column-gap: 0rem;
