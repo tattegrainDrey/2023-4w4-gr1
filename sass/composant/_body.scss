@@ -28,7 +28,7 @@ body {
         flex-direction: column;
         align-items: center;
 
-        .search404 {
+        .search404, .notesmenu404, .coursmenu404 {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -67,6 +67,32 @@ body {
                 cursor: pointer;
                 background-color: #f582ae;
                 opacity: .7;
+            }
+        }
+
+        .notesmenu404, .coursmenu404 {
+            h2 {
+                margin: 2rem 0 0;
+            }
+
+            ul {
+                list-style-type: none;
+                padding: 0;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                row-gap: 1rem;
+                column-gap: 1rem;
+
+            }
+
+            a {
+                font-size: 1.2rem;
+
+            }
+
+            a:hover {
+                color: #8bd3dd;
             }
         }
 

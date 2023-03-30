@@ -14,12 +14,24 @@
              ?>
         </div>
         <div class="coursmenu404">
-            <p>Nos choix de cours</p>
-            <div>Items Cours Menu Placeholder</div>
+            <h2>Nos choix de cours</h2>
+            <?php
+                wp_nav_menu(array(
+                    "menu"=>"cours",
+                    "container" => "div"
+                )
+                )
+            ?>
         </div>
         <div class="notesmenu404">
-            <p>Les notes de cours</p>
-            <div>Items Notes Menu Placeholder</div>
+            <h2>Les notes de cours</h2>
+            <?php
+                wp_nav_menu(array(
+                    "menu"=>"4w4",
+                    "container" => "div"
+                )
+                )
+            ?>
         </div>
 </main>
 </div>
