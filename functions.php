@@ -46,24 +46,9 @@ function cidweb_modifie_requete_principal( $query ) {
      }
      add_action( 'pre_get_posts', 'cidweb_modifie_requete_principal' );
 
+/**
+ * 
+ * 
+ */
 
-
-
-
-/** 
-* Modifie la variable du titre de wordpress (le tronquant)
-* dépendant de sa longueur ($max)
-* et de sa position (!is_single())
-*/
-/*    function max_title_length( $title ) {
-        $max = 25;
-        if( strlen( $title ) > $max && !is_single()) {
-        return substr( $title, 0, $max ). " &hellip;";
-        } else {
-        return $title;
-        }
-        }
-         
-        add_filter( 'the_title', 'max_title_length');
-*/
-    
+ 
