@@ -38,7 +38,7 @@
     <hr>
     <div class="category-cont">
     <?php 
-        if(!is_front_page() && !is_search()) {
+        if(!is_front_page() && !is_search() && !is_404()) {
             get_template_part("template-parts/header-aside"); 
         }
 

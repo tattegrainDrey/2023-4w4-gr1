@@ -609,8 +609,9 @@ body hr {
 }
 body .e404 {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
 }
 body .e404 * {
   size: 4rem;
