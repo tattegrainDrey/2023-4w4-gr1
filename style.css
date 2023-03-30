@@ -608,13 +608,49 @@ body hr {
   color: #172c66;
 }
 body .e404 {
+  width: 1400px;
   display: flex;
-  align-items: center;
-  flex-wrap: nowrap;
   flex-direction: column;
+  align-items: center;
 }
-body .e404 * {
-  size: 4rem;
+body .e404 .search404 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .e404 form {
+  grid-area: milieu;
+  justify-self: flex-end;
+  display: flex;
+}
+body .e404 form input {
+  border: solid #001858 thick;
+  height: 4rem;
+  width: 20rem;
+  border-right: none;
+}
+body .e404 form input:focus {
+  border: none;
+}
+body .e404 form button {
+  height: 4rem;
+  width: 4rem;
+  border: solid #001858 thick;
+  border-left: none;
+  background-color: #8bd3dd;
+}
+body .e404 form button span {
+  display: flex;
+  justify-content: center;
+}
+body .e404 form button span .emoji {
+  width: 30px !important;
+  height: 30px !important;
+}
+body .e404 form button:hover {
+  cursor: pointer;
+  background-color: #f582ae;
+  opacity: 0.7;
 }
 
 .main-accueil a {

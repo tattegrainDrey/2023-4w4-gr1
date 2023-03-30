@@ -23,14 +23,53 @@ body {
     }
 
     .e404 {
-    display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
-    flex-direction: column;
+        width: 1400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-        * {
-            size: 4rem;
+        .search404 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
+
+        form {
+            grid-area: milieu;
+            justify-self: flex-end;
+            display: flex;
+            input {
+                border: solid #001858 thick;
+                height: 4rem;
+                width: 20rem;
+                border-right: none;          
+            }
+            input:focus {
+                border: none;
+            }
+            button {
+                height: 4rem;
+                width: 4rem;
+                border: solid #001858 thick;
+                border-left: none;
+                background-color: #8bd3dd;
+                span {
+                    display: flex;
+                    justify-content: center;
+
+                    .emoji { 
+                        width: 30px !important;
+                        height: 30px !important;
+                    }
+                }
+            } 
+            button:hover {
+                cursor: pointer;
+                background-color: #f582ae;
+                opacity: .7;
+            }
+        }
+
     }
 }
 
