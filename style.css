@@ -826,13 +826,6 @@ footer .contenuFootMain .widget3 {
   grid-column: 3/4;
   grid-row: 2/3;
 }
-footer .contenuFootMain #block-9, footer .contenuFootMain #block-12 {
-  row-gap: 1rem;
-}
-footer .contenuFootMain #block-12 li {
-  display: flex;
-  column-gap: 0.5rem;
-}
 footer .contenuFootMain .image * {
   border-radius: 1rem;
 }
