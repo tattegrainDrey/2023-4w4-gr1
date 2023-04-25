@@ -1,9 +1,9 @@
-# Examen Intra (20%)
+# Lab5 (2%)
 
 ## Autrice : Djenah A. A. Tattegrain
 
-## L\'objectif du TP1:
+## L\'objectif du Lab:
 
-- Adapter le modèle 404.php pour reproduire la maquette incluse avec le devis (fait selon le design de mon site web)
+- Créer des sidebar de widget 
 
-Mon [siteground](https://cidweb42.sg-host.com/category/cours/uctg) (lien direct vers une page d'erreur)
+Mon [siteground](https://cidweb42.sg-host.com/porte-ouverte-de-novembre/) (lien vers un des événements)
