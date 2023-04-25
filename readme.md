@@ -1,14 +1,9 @@
-# Lab #1 - Introduction
-## 4w4 - Conception d'interfaces et développement Web
-### Auteur: Tattegrain
+# Examen Intra (20%)
 
-#### Objectif du lab
-- Installer Wordpress localement
-- Réaliser une première version d'un thème
+## Autrice : Djenah A. A. Tattegrain
 
-#### Liens de références
-- https://eddytuto.ca/
-- https://eddytuto.sg-host.com/installation-de-wordpress/
+## L\'objectif du TP1:
 
-#### Raccourci
-- `ctrl+shift+v` pour voir un preview du fichier
+- Adapter le modèle 404.php pour reproduire la maquette incluse avec le devis (fait selon le design de mon site web)
+
+Mon [siteground](https://cidweb42.sg-host.com/category/cours/uctg) (lien direct vers une page d'erreur)

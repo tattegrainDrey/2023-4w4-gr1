@@ -1,0 +1,133 @@
+.site__entete {
+    margin-top: 1rem;
+    display: grid;
+    align-items: center;
+    grid-template-areas: "gauche . . . droite"
+                         "gauche . . . milieu";
+
+
+    .entete__gauche {
+        grid-area: gauche;
+        display: flex;        
+        flex: 1 1 20rem;
+        align-items: center;
+
+        .custom-logo {
+            max-width: 90%;
+            height: auto;
+            border-radius: 5%;
+        }
+        @media screen and (max-width: 1300px) {
+            .image {
+                width: 110px;
+            }
+            
+            
+        }
+
+        .titre__slogan {
+            display: flex;
+            flex-direction: column;
+
+            .site__titre{
+                text-decoration: none;
+            }
+        }
+
+        .titre__slogan * {
+            margin: 0;
+        }
+    }
+
+    .entete__droite {
+        grid-area: droite;
+        justify-self: flex-end;
+        align-self:center;
+
+        .menu-item-object-category {
+            a {
+                color: #8bd3dd;
+            }
+        }
+        .menu {
+            list-style-type: none;
+            display: flex;
+            flex-wrap: nowrap;
+            white-space: nowrap;
+            justify-content: flex-end;
+            column-gap: 1rem;
+            font-size: clamp(0.7rem, 0.4434rem + 0.9964vw, 1.4rem);
+            font-weight: bold;
+            margin: 1rem 0;
+            padding-left: 0;
+        }
+
+        @media screen and (max-width: 870px) {
+            .menu {
+                column-gap: .4rem;
+            }
+            
+        }
+        
+        .menu *:hover, .site__titre h1:hover, .main-accueil h3:hover {
+            color: #f582ae;
+        }
+    }  
+
+    form {
+        grid-area: milieu;
+        justify-self: flex-end;
+        display: flex;
+        //dynamiser la taille (height) de la barre de recherche
+        input {
+            border: solid #001858 thick;
+            height: 2.5rem;
+            border-right: none;          
+        }
+        input:focus {
+            border: none;
+        }
+        button {
+            height: 2.5rem;
+            border: solid #001858 thick;
+            border-left: none;
+            background-color: #8bd3dd;
+            span {
+                display: flex;
+                justify-content: center;
+            }
+        } 
+        button:hover {
+            cursor: pointer;
+            background-color: #f582ae;
+            opacity: .7;
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .site__entete {
+        grid-template-areas: 'gau rec rec'
+                             'men men men';
+        column-gap: 1rem;
+
+        .entete__gauche{
+            grid-area: gau;
+
+            .image {
+                width: 80px;
+            }
+        }
+
+        .recherche {
+            grid-area: rec;
+        }
+
+        .entete__droite {
+            grid-area: men;
+            margin: 1rem 0 0 0;
+        }
+
+        
+    }
+}

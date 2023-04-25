@@ -1,0 +1,53 @@
+  h1 {
+    font-size: clamp(1.5rem, -0.2639rem + 4.1812vw, 3.75rem);
+  }
+  h2 {
+    font-size: clamp(1rem, 0.2434rem + 0.9964vw, 1.2rem);
+  }
+  h3 {
+    font-size: clamp(0.5625rem, -0.25rem + 2.6vw, 2.1875rem);
+  }
+  h4 {
+    font-size: clamp(0.5rem, -0.1875rem + 2.2vw, 1.875rem);
+  }
+  h5 {
+    font-size: clamp(0.5rem, -0.0313rem + 1.7vw, 1.5625rem);
+  }
+  h6 {
+    font-size: clamp(0.8rem, 0.2512rem + 1.3008vw, 1.5rem);
+  }
+
+  P {
+    font-size: clamp(1rem, 0.804rem + 0.4646vw, 1.25rem);
+  }
+  a {
+    font-size: clamp(0.8rem, 0.2512rem + 1.3008vw, 1.5rem);
+  }
+  ul {
+    font-family: 'Garamond', serif;
+  }
+  
+  h1 {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  }
+  
+  h2 {
+    font-family: 'Lobster', cursive;
+  }
+  
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Georgia', cursive;
+  }
+  
+  p {
+    font-family: 'Shadows Into Light', cursive; 
+    line-height: 1.8;
+  }
+
+  a {
+    font-family: 'Lobster', cursive;
+  }
+

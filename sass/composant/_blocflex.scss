@@ -1,0 +1,19 @@
+.blocflex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: column;
+
+    .blocflex__galerie {
+        align-self: center;
+        order: 1;
+        background: none;
+        border: none;
+        box-shadow: 1px 1px 5px #f3d2c1 inset;
+    }
+
+    // .blocflex__article {
+    //     order: 2;
+    // }
+
+}
