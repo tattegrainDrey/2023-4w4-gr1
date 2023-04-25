@@ -790,14 +790,11 @@ footer {
 }
 footer .contenuFootMain {
   display: grid;
+  row-gap: 1rem;
+  column-gap: 1rem;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto;
-}
-footer .contenuFootMain > div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: first baseline;
+  align-items: flex-start;
 }
 footer .contenuFootMain .image {
   grid-column: 1/2;
@@ -819,18 +816,31 @@ footer .contenuFootMain .widget2 {
   grid-column: 2/3;
   grid-row: 2/3;
 }
-footer .contenuFootMain .widget1 {
+footer .contenuFootMain .widget2 #block-11 ul {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+}
+footer .contenuFootMain .widget3 {
   grid-column: 3/4;
   grid-row: 2/3;
+}
+footer .contenuFootMain #block-9, footer .contenuFootMain #block-12 {
+  row-gap: 1rem;
+}
+footer .contenuFootMain #block-12 li {
+  display: flex;
+  column-gap: 0.5rem;
 }
 footer .contenuFootMain .image * {
   border-radius: 1rem;
 }
-footer .contenuFootMain figure a {
+footer .contenuFootMain * a {
   display: flex;
   column-gap: 1rem;
 }
-footer .contenuFootMain figure a:hover {
+footer .contenuFootMain * a:hover {
   color: #8bd3dd;
 }
 footer .contenuFootMain * {
