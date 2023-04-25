@@ -5,12 +5,11 @@
             <?php the_custom_logo(); ?>
             <a class="site__titre"href="<?= bloginfo('url') ?>"><h1><?= bloginfo('name') ?> </h1></a>
         </div>
-
-        <div class="colonne1">
+        <div class="liensEcole">
             <h2>Liens de l'école</h2>
             <figure>
                 <a href="https://www.cmaisonneuve.qc.ca/">
-                    <img src="https://th.bing.com/th?id=ODLS.71b841f4-6ddf-431d-bce1-8acd53215db3&w=32&h=32&o=6&pid=13.1" alt="logo M9">
+                    <img src="https://th.bing.com/th?id=ODLS.71b841f4-6ddf-431d-bce1-8acd53215db3&w=32&h=32&o=6&pid=13.1" alt="logo M9" width="32px">
                     <figcaption>Site Web du College de Maisonneuve</figcaption>
                 </a>
             </figure>
@@ -29,7 +28,7 @@
                 </a>
             </figure>
         </div>
-        <div class="colonne2">
+        <div class="liensMiens">
             <h2>Mes liens</h2>
             <figure>
                 <a href="https://github.com/tattegrainDrey">
@@ -57,24 +56,18 @@
                 </a>
             </figure>
         </div>
+        <div class="widget1">
+            <?php dynamic_sidebar( 'footer_1' ); ?>
+        </div>
+        <div class="widget2">
+            <?php dynamic_sidebar( 'footer_2' ); ?>        
+        </div>
+        <div class="widget3">
+            <?php dynamic_sidebar( 'footer_3' ); ?>        
+        </div>
     </div>
     <div class="contenuFootSec">
         Propriété de Djenah A. Tattegrain. © Tous droits réservés.
-    </div>
-    <section> 
-        <div class="sidebar">
-            <?php dynamic_sidebar( 'footer_1' ); ?>
-        </div>
-    </section>   
-    <section> 
-        <div class="sidebar">
-            <?php dynamic_sidebar( 'footer_2' ); ?>
-        </div>
-    </section>   
-    <section> 
-        <div class="sidebar">
-            <?php dynamic_sidebar( 'footer_3' ); ?>
-        </div>
-    </section>   
+    </div>  
 </footer>
 <?php wp_footer(); ?>
