@@ -47,11 +47,11 @@ function cidweb_modifie_requete_principal( $query ) {
      add_action( 'pre_get_posts', 'cidweb_modifie_requete_principal' );
 
 /**
- * Permet de personnalisé chacun des titre du menu cours
- * @param $title : titre du menu à modifier
- *         $item : la structure «li» du menu
- *         $args : objet décrivant l'ensemble des menu de notre site
- *         $depth : Niveau de profondeur du menu (on a retirer ici)     
+ * Permet de personnaliser chacun des titre du menu cours
+ * @param $title : titre du menu à modifier,
+ * @param $item : la structure «li» du menu,
+ * @param  $args : objet décrivant l'ensemble des menu de notre site
+ * @param  $depth : Niveau de profondeur du menu (on a retirer ici)     
  */
 
  function perso_menu_item_title($title, $item, $args) {
@@ -66,4 +66,39 @@ function cidweb_modifie_requete_principal( $query ) {
     }
     add_filter('nav_menu_item_title', 'perso_menu_item_title', 10, 3);         
 
+
+    /* --------------------------------------- Enregistrement des widget */
+// Enregistrer le sidebar
+function enregistrer_sidebar() {
+    register_sidebar( array(
+        'name' => __( 'Footer 1', 'nom-de-mon-theme' ),
+        'id' => 'footer_1',
+        'description' => __( 'Une zone de widget pour afficher des widgets dans le pied de page.', 'nom-de-mon-theme' ),
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>',
+    ) );
+
+    register_sidebar( array(
+        'name' => __( 'Footer 2', 'nom-de-mon-theme' ),
+        'id' => 'footer_2',
+        'description' => __( 'Une zone de widget pour afficher des widgets dans le pied de page.', 'nom-de-mon-theme' ),
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>',
+    ) );
+
+    register_sidebar( array(
+        'name' => __( 'Footer 3', 'nom-de-mon-theme' ),
+        'id' => 'footer_3',
+        'description' => __( 'Une zone de widget pour afficher des widgets dans le pied de page.', 'nom-de-mon-theme' ),
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>',
+    ) );
+}
+add_action( 'widgets_init', 'enregistrer_sidebar' );
  

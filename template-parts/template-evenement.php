@@ -13,5 +13,6 @@ if ( have_posts() ) : the_post(); ?>
 <p>La date et l'heure de l'événement: <?php the_field('date_et_heure_de_levenement'); ?></p>     
 <?php endif;?>
 </main><!-- #main -->
+</div>
 <?php
 get_footer();
