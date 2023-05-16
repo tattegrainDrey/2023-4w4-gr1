@@ -9,6 +9,7 @@
     }
 ?>
 <article class="blocflex__article">
+    <?php the_post_thumbnail('medium'); ?> 
     <h5><a href="<?php the_permalink(); ?>"> <?= $titre; ?></a></h5>
     <p class="cat4w4"><?= wp_trim_words(get_the_excerpt(), 15) ?></p>
 </article>
