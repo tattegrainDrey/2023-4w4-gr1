@@ -711,13 +711,6 @@ body .e404 .notesmenu404 a:hover, body .e404 .coursmenu404 a:hover {
 .category article {
   padding: 1rem 1rem;
 }
-.category article h5 {
-  animation: none;
-}
-.category article:hover h5 {
-  animation: jello;
-  animation-duration: 1s;
-}
 .category * {
   margin: 0.5rem 0;
 }
