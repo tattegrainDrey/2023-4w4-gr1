@@ -6,7 +6,14 @@
 
 <main class="main-accueil">
     <!-- <pre>front-page.php</pre> -->
+
     <section class="blocflex">
+        <div class="bloce">
+            <h3 class="titre"> Évènements </h3>
+            <?php
+                wp_page_menu();
+            ?>
+        </div>
     <?php if(have_posts()):
         while(have_posts()): the_post(); ?> 
         <?php 

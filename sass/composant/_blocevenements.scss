@@ -1,0 +1,16 @@
+.bloce {
+
+    h3 {
+        text-align: center;
+    }
+
+    .menu {
+        padding: 0 0 1rem;
+
+        ul {
+            display: flex;
+            list-style-type: none;
+            justify-content: space-around;
+        }
+    }
+}

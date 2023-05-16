@@ -1,9 +1,9 @@
-# Lab5 (2%)
+# TP2 (2%)
 
 ## Autrice : Djenah A. A. Tattegrain
 
 ## L\'objectif du Lab:
 
-- Créer des sidebar de widget 
+- C
 
-Mon [siteground](https://cidweb42.sg-host.com/porte-ouverte-de-novembre/) (lien vers un des événements)
+Mon [siteground](https://cidweb42.sg-host.com)
