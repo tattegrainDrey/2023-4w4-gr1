@@ -12,6 +12,7 @@
             <h3 class="titre"> Évènements </h3>
             <?php
                 wp_page_menu();
+                
             ?>
         </div>
     <?php if(have_posts()):

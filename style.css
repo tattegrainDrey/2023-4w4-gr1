@@ -598,6 +598,15 @@ a {
   box-shadow: 1px 1px 5px #f3d2c1 inset;
 }
 
+.main-accueil .blocflex__article {
+  display: flex;
+  flex-direction: column;
+}
+.main-accueil .blocflex__article img {
+  padding-top: 0.7rem;
+  align-self: center;
+}
+
 body {
   background-color: #fef6e4;
   color: #001858;

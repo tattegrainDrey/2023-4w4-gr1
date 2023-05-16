@@ -12,8 +12,17 @@
         box-shadow: 1px 1px 5px #f3d2c1 inset;
     }
 
-    // .blocflex__article {
-    //     order: 2;
-    // }
+
+}
+
+.main-accueil {
+    .blocflex__article {
+        display: flex;
+        flex-direction: column;
+        img {
+            padding-top: .7rem;
+            align-self: center;
+        }
+    }
 
 }
