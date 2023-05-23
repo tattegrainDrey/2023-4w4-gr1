@@ -607,7 +607,18 @@ a {
 
 .pageatelier div {
   display: flex;
-  align-self: center;
+  justify-content: center;
+}
+.pageatelier div table {
+  margin: 2rem auto;
+  border-collapse: collapse;
+}
+.pageatelier div th, .pageatelier div td {
+  border: thin solid black;
+  padding: 0.5rem 1rem;
+}
+.pageatelier div td {
+  text-align: center;
 }
 
 body {
