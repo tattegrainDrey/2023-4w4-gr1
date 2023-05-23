@@ -9,6 +9,7 @@
 if ( have_posts() ) : the_post(); ?>
 <h1><?= get_the_title(); ?></h1>
 <?php the_content();?>
+<?php the_post_thumbnail('thumbnail', ['class' => 'img-atelier']) ?> 
 <p>Formateur: <?php the_field('formateur'); ?></p>
 <p>Date de l'atelier: <?php the_field('date'); ?></p>
 <p>Heure de l'atelier: <?php the_field('heure'); ?></p>  
