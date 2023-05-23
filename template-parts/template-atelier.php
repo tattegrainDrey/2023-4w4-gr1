@@ -15,7 +15,7 @@ if ( have_posts() ) : the_post(); ?>
 <p>Durée d'un atelier: <?php the_field('duree'); ?> heures</p>
 <p>Local de l'atelier: <?php the_field('local'); ?></p>  
 <?php endif;?>
-</main><!-- #main -->
+</main><!-- #main pour atelier -->
 </div>
 <?php
 get_footer();
