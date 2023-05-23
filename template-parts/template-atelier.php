@@ -4,17 +4,36 @@
      */
 ?>
 <?php get_header(); ?>
-<main class="page">
+<main class="pageatelier">
 <?php
 if ( have_posts() ) : the_post(); ?>
+<?php the_post_thumbnail('thumbnail', ['class' => 'img-atelier']) ?> 
 <h1><?= get_the_title(); ?></h1>
 <?php the_content();?>
-<?php the_post_thumbnail('thumbnail', ['class' => 'img-atelier']) ?> 
-<p>Formateur: <?php the_field('formateur'); ?></p>
-<p>Date de l'atelier: <?php the_field('date'); ?></p>
-<p>Heure de l'atelier: <?php the_field('heure'); ?></p>  
-<p>Durée d'un atelier: <?php the_field('duree'); ?> heures</p>
-<p>Local de l'atelier: <?php the_field('local'); ?></p>  
+<div>
+<table>
+    <tr>
+        <th>Formateur: </th>
+        <td><?php the_field('formateur'); ?></td>
+    </tr>
+    <tr>
+        <th>Date de l'atelier: </th>
+        <td><?php the_field('date'); ?></td>
+    </tr>
+    <tr>
+        <th>Heure de l'atelier: </th>
+        <td><?php the_field('heure'); ?></td>
+    </tr>
+    <tr>
+        <th>Durée d'un atelier: </th>
+        <td><?php the_field('duree'); ?></td>
+    </tr>
+    <tr>
+        <th>Local de l'atelier: </th>
+        <td><?php the_field('local'); ?></td>
+    </tr>
+</table>
+</div>
 <?php endif;?>
 </main><!-- #main pour atelier -->
 </div>

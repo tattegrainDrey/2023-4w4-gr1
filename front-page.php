@@ -22,7 +22,6 @@
         <div class="blocpag blocate">
             <h3 class="titre"> Nos ateliers en 2023 </h3>
             <?php
-                the_post_thumbnail();
                 wp_nav_menu(array(
                     "menu"=>"ateliers",
                     "container" => "nav"

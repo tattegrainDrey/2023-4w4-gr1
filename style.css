@@ -605,6 +605,11 @@ a {
   justify-content: space-around;
 }
 
+.pageatelier div {
+  display: flex;
+  align-self: center;
+}
+
 body {
   background-color: #fef6e4;
   color: #001858;
