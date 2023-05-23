@@ -8,11 +8,25 @@
     <!-- <pre>front-page.php</pre> -->
 
     <section class="blocflex">
-        <div class="bloce">
+        <div class="blocpag bloceven">
             <h3 class="titre"> Évènements </h3>
             <?php
-                wp_page_menu();
+                wp_nav_menu(array(
+                    "menu"=>"evenements",
+                    "container" => "nav"
+                )
+                )
                 
+            ?>
+        </div>
+        <div class="blocpag blocate">
+            <h3 class="titre"> Nos ateliers en 2023 </h3>
+            <?php
+                wp_nav_menu(array(
+                    "menu"=>"ateliers",
+                    "container" => "nav"
+                )
+                )
             ?>
         </div>
     <?php if(have_posts()):

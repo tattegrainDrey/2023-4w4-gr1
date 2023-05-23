@@ -44,5 +44,8 @@
         if(is_page_template('template-parts/template-atelier.php')) {
             get_template_part("template-parts/atelier-aside"); 
         }
+        if(is_page_template('template-parts/evenement.php')) {
+            get_template_part("template-parts/evenement-aside"); //à faire
+        }
 
     ?>

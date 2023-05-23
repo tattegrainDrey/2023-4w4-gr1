@@ -572,18 +572,6 @@ a {
     margin: 1rem 0 0 0;
   }
 }
-.bloce h3 {
-  text-align: center;
-}
-.bloce .menu {
-  padding: 0 0 1rem;
-}
-.bloce .menu ul {
-  display: flex;
-  list-style-type: none;
-  justify-content: space-around;
-}
-
 .blocflex {
   display: flex;
   justify-content: space-between;
@@ -605,6 +593,16 @@ a {
 .main-accueil .blocflex__article img {
   padding-top: 0.7rem;
   align-self: center;
+}
+
+.blocpag h3 {
+  text-align: center;
+}
+.blocpag .menu {
+  padding: 0 0 1rem;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
 }
 
 body {
